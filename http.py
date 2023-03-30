@@ -61,6 +61,7 @@ class HttpServer:
 	def http_get(self,object_address,headers):
 		files = glob('./*')
 		print(files)
+		print("THIS IS THE OBJECT ADDRESS" + str(object_address))
 		thedir='./'
 		if (object_address == '/'):
 			return self.response(200,'OK','Ini Adalah web Server percobaan',dict())
@@ -98,18 +99,3 @@ if __name__=="__main__":
 	#print(d)
 #	d = httpserver.http_get('testing.txt')
 #	print(d)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
